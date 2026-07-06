@@ -122,20 +122,6 @@ function Index() {
               />
             </div>
 
-            {/* Little monogram badge */}
-            <div className="absolute -bottom-2 right-4 md:right-10 rotate-[-6deg]">
-              <div className="bg-[#faf7f2] border border-[#d8c3b1] rounded-full h-24 w-24 md:h-28 md:w-28 flex flex-col items-center justify-center shadow-[0_10px_30px_rgba(74,45,30,0.15)]">
-                <div className="font-serif italic text-[10px] tracking-[0.25em] uppercase text-[#8a6f60]">
-                  the wedding
-                </div>
-                <div className="font-serif text-2xl text-[#2b211c] leading-none mt-1">
-                  A <span className="italic text-[#b8846b]">&amp;</span> E
-                </div>
-                <div className="font-sans text-[9px] tracking-[0.3em] text-[#8a6f60] mt-1">
-                  08.08.26
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 

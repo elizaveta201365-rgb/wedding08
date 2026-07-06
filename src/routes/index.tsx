@@ -7,129 +7,151 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="min-h-screen w-full bg-white text-[#3a2e28] overflow-hidden relative">
-      {/* Ambient background flourishes */}
+    <main className="min-h-screen w-full bg-[#eceae5] text-[#2a2620] overflow-hidden relative font-serif">
+      {/* Soft ambient background */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-70"
+        className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(60% 50% at 15% 20%, #f6ebe0 0%, transparent 60%), radial-gradient(50% 45% at 85% 85%, #efe3d4 0%, transparent 65%)",
+            "radial-gradient(70% 60% at 20% 15%, #f4f1ea 0%, transparent 70%), radial-gradient(60% 55% at 85% 90%, #e4dfd4 0%, transparent 70%)",
         }}
       />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-20 -left-24 w-[420px] h-[420px] rounded-full blur-3xl opacity-40"
-        style={{ background: "#e9d3c1" }}
-      />
 
-      <section className="relative mx-auto max-w-7xl px-6 md:px-12 py-14 md:py-20 min-h-screen flex items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center w-full">
-          {/* Left column — invitation text */}
-          <div className="animate-fade-up order-2 md:order-1">
-            <div className="flex items-center gap-4 mb-8">
-              <span className="block h-px w-12 bg-[#b8846b] origin-left animate-shimmer-line" />
-              <span className="font-sans uppercase tracking-[0.35em] text-xs text-[#b8846b]">
-                Save the date
+      <section className="relative mx-auto max-w-6xl px-6 md:px-10 py-10 md:py-16 min-h-screen flex items-center">
+        <div className="grid grid-cols-1 md:grid-cols-[1.05fr_1fr] gap-10 md:gap-14 items-center w-full">
+          {/* Left column — invitation text on cream */}
+          <div className="animate-fade-up order-2 md:order-1 relative">
+            <div className="flex items-center gap-3 mb-6 text-[#8a7a63]">
+              <span className="block h-px w-10 bg-[#b8a37f]" />
+              <span className="font-sans uppercase tracking-[0.4em] text-[10px]">
+                save the date · 2026
               </span>
+              <span className="block h-px w-10 bg-[#b8a37f]" />
             </div>
 
-            <p className="font-serif italic text-lg md:text-xl text-[#8a6f60] mb-6">
-              с любовью приглашаем вас на нашу свадьбу
+            <p className="italic text-lg md:text-xl text-[#8a7a63] mb-4 tracking-wide">
+              дорогие
+            </p>
+            <h2 className="font-serif italic text-3xl md:text-4xl text-[#2a2620] mb-8 leading-tight">
+              родные и близкие!
+            </h2>
+
+            <p className="font-sans text-[15px] leading-[1.9] text-[#4a4238] max-w-md mb-6">
+              С трепетом и радостью в сердце мы приглашаем вас разделить с нами
+              один из самых важных дней нашей жизни — день, когда мы навсегда
+              соединим наши судьбы.
+            </p>
+            <p className="font-sans text-[15px] leading-[1.9] text-[#4a4238] max-w-md mb-10">
+              Будем счастливы видеть вас рядом — под шёпот сосен и мягкий свет
+              летнего вечера на берегу залива.
             </p>
 
-            <h1 className="font-serif leading-[0.95] tracking-tight text-[#2b211c]">
-              <span className="block text-5xl md:text-7xl lg:text-8xl">Андрей</span>
-              <span className="block font-serif italic text-3xl md:text-5xl text-[#b8846b] my-2 md:my-3">
-                &amp;
-              </span>
-              <span className="block text-5xl md:text-7xl lg:text-8xl">Елизавета</span>
-            </h1>
-
-            <div className="mt-10 flex items-center gap-6">
-              <div className="text-center">
-                <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#8a6f60] mb-1">
+            {/* Details */}
+            <div className="flex items-stretch gap-6 mb-10">
+              <div>
+                <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#8a7a63] mb-1">
+                  когда
+                </div>
+                <div className="italic text-2xl md:text-[26px] text-[#2a2620]">
+                  08 · 08 · 2026
+                </div>
+                <div className="font-sans text-xs text-[#8a7a63] mt-1 tracking-widest uppercase">
                   суббота
                 </div>
-                <div className="font-serif text-2xl md:text-3xl text-[#2b211c]">08 · 08 · 2026</div>
               </div>
-              <span className="h-10 w-px bg-[#d8c3b1]" />
+              <span className="w-px bg-[#c9bba3]" />
               <div>
-                <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#8a6f60] mb-1">
-                  Санкт-Петербург
+                <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#8a7a63] mb-1">
+                  где
                 </div>
-                <div className="font-serif text-lg md:text-xl text-[#2b211c]">
-                  Ресторан «Дача на заливе»
+                <div className="italic text-xl md:text-[22px] text-[#2a2620] leading-tight">
+                  Дача на заливе
                 </div>
-                <div className="font-sans text-sm text-[#6b5a4f] mt-0.5">
-                  Приморское шоссе, 448
+                <div className="font-sans text-xs text-[#8a7a63] mt-1">
+                  Санкт-Петербург, Приморское ш., 448
                 </div>
               </div>
             </div>
 
-            <p className="mt-10 max-w-md font-serif italic text-base md:text-lg text-[#6b5a4f] leading-relaxed">
-              Этот день станет особенным для нас, и мы будем счастливы разделить его
-              с самыми близкими людьми — рядом с заливом, под шёпот сосен и свет
-              летнего вечера.
-            </p>
-
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <a
-                href="#rsvp"
-                className="inline-flex items-center justify-center rounded-full bg-[#2b211c] text-[#faf7f2] px-8 py-3 font-sans text-sm tracking-[0.2em] uppercase transition-all hover:bg-[#b8846b] hover:tracking-[0.28em]"
-              >
-                Подтвердить участие
-              </a>
-              <a
-                href="#details"
-                className="inline-flex items-center gap-2 font-serif italic text-[#8a6f60] hover:text-[#b8846b] transition-colors"
-              >
-                <span>программа дня</span>
-                <span aria-hidden>→</span>
-              </a>
-            </div>
+            <a
+              href="#rsvp"
+              className="group inline-flex items-center justify-center gap-3 border border-[#b8a37f] px-10 py-4 font-sans text-[11px] tracking-[0.35em] uppercase text-[#8a6f4a] hover:bg-[#b8a37f] hover:text-[#faf7f0] transition-all duration-500"
+            >
+              <span>стать свидетелем чуда</span>
+              <span aria-hidden className="transition-transform group-hover:translate-x-1">
+                →
+              </span>
+            </a>
           </div>
 
-          {/* Right column — photo booth image */}
-          <div className="relative order-1 md:order-2 flex items-center justify-center">
-            <div
-              aria-hidden
-              className="absolute inset-0 -z-10 blur-3xl opacity-50"
-              style={{
-                background:
-                  "radial-gradient(closest-side, #e9c9b3 0%, transparent 70%)",
-              }}
-            />
-
-            {/* Decorative frame ring */}
-            <div
-              aria-hidden
-              className="absolute w-[85%] aspect-square rounded-full border border-[#d8c3b1]/60"
-            />
-            <div
-              aria-hidden
-              className="absolute w-[70%] aspect-square rounded-full border border-[#d8c3b1]/40"
-            />
-
-            <div
-              className="relative w-full max-w-md md:max-w-lg animate-float-slow"
-              style={{ ["--r" as string]: "0deg" }}
-            >
+          {/* Right column — photo card with overlay */}
+          <div className="relative order-1 md:order-2">
+            <div className="relative aspect-[3/4] w-full max-w-md mx-auto overflow-hidden rounded-sm shadow-[0_30px_60px_-20px_rgba(50,35,20,0.35)] animate-fade-up">
               <img
                 src={photoBooth.url}
-                alt="Андрей и Елизавета — фотобудка"
-                className="w-full h-auto drop-shadow-[0_25px_45px_rgba(74,45,30,0.25)]"
+                alt="Андрей и Елизавета"
+                className="absolute inset-0 h-full w-full object-cover"
               />
-            </div>
+              {/* Dark elegant overlay */}
+              <div
+                aria-hidden
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "linear-gradient(180deg, rgba(30,24,18,0.55) 0%, rgba(30,24,18,0.15) 40%, rgba(30,24,18,0.15) 70%, rgba(30,24,18,0.75) 100%)",
+                }}
+              />
 
+              {/* Top corner label */}
+              <div className="absolute top-5 left-5 right-5 flex items-center justify-between text-[#f4ead8]">
+                <span className="font-sans uppercase tracking-[0.35em] text-[9px] opacity-80">
+                  свадьба
+                </span>
+                <span className="font-sans uppercase tracking-[0.35em] text-[9px] opacity-80">
+                  08.08.26
+                </span>
+              </div>
+
+              {/* Names overlaid */}
+              <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center text-[#f4ead8] px-6">
+                <h1 className="italic leading-[0.95] tracking-tight drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+                  <span className="block text-5xl md:text-6xl lg:text-7xl">
+                    Андрей
+                  </span>
+                  <span className="block italic text-2xl md:text-3xl text-[#e6c99b] my-2">
+                    &amp;
+                  </span>
+                  <span className="block text-5xl md:text-6xl lg:text-7xl">
+                    Елизавета
+                  </span>
+                </h1>
+                <div className="mt-5 flex items-center justify-center gap-3 text-[#e6c99b]">
+                  <span className="h-px w-8 bg-[#e6c99b]/60" />
+                  <span className="italic text-sm tracking-widest">
+                    08.08.2026
+                  </span>
+                  <span className="h-px w-8 bg-[#e6c99b]/60" />
+                </div>
+              </div>
+
+              {/* Bottom quote */}
+              <div className="absolute bottom-6 inset-x-6 text-center text-[#f4ead8]/90">
+                <p className="italic text-[13px] leading-relaxed">
+                  «не существует чести или семи чудес в мире.
+                  <br />
+                  есть только одно — это любовь»
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Bottom hairline */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-3 text-[#b8846b]">
-          <span className="h-px w-10 bg-[#d8c3b1]" />
-          <span className="font-serif italic text-sm">навсегда вместе</span>
-          <span className="h-px w-10 bg-[#d8c3b1]" />
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-3 text-[#8a7a63]">
+          <span className="h-px w-10 bg-[#c9bba3]" />
+          <span className="italic text-sm">навсегда вместе</span>
+          <span className="h-px w-10 bg-[#c9bba3]" />
         </div>
       </section>
     </main>

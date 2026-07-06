@@ -7,7 +7,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="min-h-screen w-full bg-[#faf7f2] text-[#3a2e28] overflow-hidden relative">
+    <main className="min-h-screen w-full bg-white text-[#3a2e28] overflow-hidden relative">
       {/* Ambient background flourishes */}
       <div
         aria-hidden
@@ -116,7 +116,7 @@ function Index() {
               style={{ ["--r" as string]: "0deg" }}
             >
               <img
-                src={weddingPhotos.url}
+                src={photoBooth.url}
                 alt="Андрей и Елизавета — фотобудка"
                 className="w-full h-auto drop-shadow-[0_25px_45px_rgba(74,45,30,0.25)]"
               />

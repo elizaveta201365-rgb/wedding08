@@ -70,20 +70,6 @@ function Index() {
               летнего вечера на берегу залива.
             </p>
 
-            {/* Details */}
-            <div className="flex flex-col sm:flex-row items-center sm:items-stretch justify-center md:justify-start gap-5 sm:gap-6 mb-8 md:mb-10">
-              <div>
-                <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#6b7f5c] mb-1">
-                  когда
-                </div>
-                <div className="italic text-2xl md:text-[26px] text-[#2d3d2a]">
-                  08 · 08 · 2026
-                </div>
-                <div className="font-sans text-xs text-[#6b7f5c] mt-1 tracking-widest uppercase">
-                  суббота
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Right column — photo on the main background */}

@@ -141,17 +141,17 @@ function Index() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[110px] sm:auto-rows-[140px] md:auto-rows-[160px] gap-3 sm:gap-4 animate-fade-up">
+        <div className="relative mx-auto w-full max-w-[340px] sm:max-w-lg md:max-w-3xl h-[420px] sm:h-[520px] md:h-[600px] animate-fade-up">
           {[
-            { src: venue1.url, cls: "col-span-2 row-span-2" },
-            { src: venue2.url, cls: "col-span-1 row-span-2 md:col-span-1 md:row-span-2" },
-            { src: venue5.url, cls: "col-span-1 row-span-1 md:col-span-1 md:row-span-1" },
-            { src: venue3.url, cls: "col-span-1 row-span-1 md:col-span-1 md:row-span-1" },
-            { src: venue4.url, cls: "col-span-2 row-span-2 md:col-span-2 md:row-span-2" },
+            { src: venue1.url, cls: "top-0 left-0 w-[62%] sm:w-[55%] md:w-[48%] h-[52%] rotate-[-4deg] z-10" },
+            { src: venue2.url, cls: "top-[6%] right-0 w-[48%] sm:w-[42%] md:w-[38%] h-[46%] rotate-[5deg] z-20" },
+            { src: venue3.url, cls: "top-[38%] left-[10%] sm:left-[14%] w-[52%] sm:w-[46%] md:w-[42%] h-[46%] rotate-[3deg] z-30" },
+            { src: venue4.url, cls: "bottom-0 right-[4%] w-[54%] sm:w-[48%] md:w-[44%] h-[48%] rotate-[-6deg] z-20" },
+            { src: venue5.url, cls: "bottom-[8%] left-0 w-[40%] sm:w-[36%] md:w-[32%] h-[38%] rotate-[7deg] z-40" },
           ].map((p, i) => (
             <div
               key={i}
-              className={`relative overflow-hidden rounded-sm border border-[#c8d3b7] bg-white p-1.5 shadow-sm ${p.cls}`}
+              className={`absolute overflow-hidden rounded-sm border border-[#c8d3b7] bg-white p-1.5 shadow-lg ${p.cls}`}
             >
               <img
                 src={p.src}

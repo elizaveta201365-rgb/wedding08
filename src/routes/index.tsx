@@ -49,27 +49,14 @@ function Index() {
         <div className="grid grid-cols-1 md:grid-cols-[1.05fr_1fr] gap-10 sm:gap-12 md:gap-14 items-center w-full">
           {/* Left column — invitation text */}
           <div className="animate-fade-up order-2 md:order-1 relative text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-3 mb-5 md:mb-6 text-[#6b7f5c]">
+            <div className="flex items-center justify-center md:justify-start gap-3 mb-7 md:mb-8 text-[#6b7f5c]">
               <span className="block h-px w-8 sm:w-10 bg-[#8ba173]" />
-              <span className="font-sans uppercase tracking-[0.4em] text-[10px]">
-                save the date · 2026
+              <span className="font-serif italic text-2xl sm:text-3xl md:text-4xl text-[#2d3d2a]">
+                08.08.2026
               </span>
               <span className="block h-px w-8 sm:w-10 bg-[#8ba173]" />
             </div>
 
-            <p className="italic text-base sm:text-lg md:text-xl text-[#6b7f5c] mb-2 sm:mb-3 tracking-wide">
-              электронное
-            </p>
-            <h2 className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-[#2d3d2a] mb-3 leading-tight">
-              приглашение
-            </h2>
-            <div className="flex items-center justify-center md:justify-start gap-3 mb-7 md:mb-8 text-[#6b7f5c]">
-              <span className="block h-px w-6 sm:w-8 bg-[#8ba173]" />
-              <span className="font-sans uppercase tracking-[0.35em] text-[10px] sm:text-[11px]">
-                на свадьбу
-              </span>
-              <span className="block h-px w-6 sm:w-8 bg-[#8ba173]" />
-            </div>
 
             <p className="font-sans text-[14px] sm:text-[15px] leading-[1.8] sm:leading-[1.9] text-[#3d4a37] max-w-md mx-auto md:mx-0 mb-5">
               С трепетом и радостью в сердце мы приглашаем вас разделить с нами

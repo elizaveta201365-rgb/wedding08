@@ -111,7 +111,7 @@ function Index() {
 
           {/* Right column — photo on the main background */}
           <div className="relative order-1 md:order-2">
-            <h1 style={{ fontFamily: '"Parisienne", cursive' }} className="text-6xl sm:text-7xl md:text-8xl text-[#2d3d2a] text-center leading-[1.15] mt-20 sm:mt-24 md:mt-28 mb-6 sm:mb-8 animate-fade-up">
+            <h1 style={{ fontFamily: '"Marck Script", cursive' }} className="text-6xl sm:text-7xl md:text-8xl text-[#2d3d2a] text-center leading-[1.15] mt-20 sm:mt-24 md:mt-28 mb-6 sm:mb-8 animate-fade-up">
               Приглашение<br />на свадьбу
             </h1>
             <img

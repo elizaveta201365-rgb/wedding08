@@ -141,21 +141,23 @@ function Index() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[110px] sm:auto-rows-[140px] md:auto-rows-[160px] gap-3 sm:gap-4 animate-fade-up">
           {[
-            "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=800&q=80",
-          ].map((src, i) => (
+            { src: venue1.url, cls: "col-span-2 row-span-2" },
+            { src: venue2.url, cls: "col-span-1 row-span-2 md:col-span-1 md:row-span-2" },
+            { src: venue5.url, cls: "col-span-1 row-span-1 md:col-span-1 md:row-span-1" },
+            { src: venue3.url, cls: "col-span-1 row-span-1 md:col-span-1 md:row-span-1" },
+            { src: venue4.url, cls: "col-span-2 row-span-2 md:col-span-2 md:row-span-2" },
+          ].map((p, i) => (
             <div
               key={i}
-              className="relative overflow-hidden rounded-sm border border-[#c8d3b7] bg-white p-2 shadow-sm animate-fade-up"
+              className={`relative overflow-hidden rounded-sm border border-[#c8d3b7] bg-white p-1.5 shadow-sm ${p.cls}`}
             >
               <img
-                src={src}
+                src={p.src}
                 alt="Ресторан «Дача на заливе»"
                 loading="lazy"
-                className="block w-full h-56 sm:h-64 md:h-72 object-cover"
+                className="block w-full h-full object-cover"
               />
             </div>
           ))}

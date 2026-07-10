@@ -107,6 +107,55 @@ function Index() {
           <span className="h-px w-8 sm:w-10 bg-[#8ba173]" />
         </div>
       </section>
+
+      {/* Место проведения */}
+      <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 py-16 sm:py-20 md:py-24">
+        <div className="text-center mb-10 sm:mb-14 animate-fade-up">
+          <div className="flex items-center justify-center gap-3 mb-5 text-[#6b7f5c]">
+            <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
+            <span className="font-sans uppercase tracking-[0.3em] text-[11px] sm:text-xs">
+              место проведения
+            </span>
+            <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
+          </div>
+          <h2 className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
+            Где встречаемся
+          </h2>
+        </div>
+
+        <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-14 animate-fade-up">
+          <p className="font-sans text-[14px] sm:text-[15px] leading-[1.9] text-[#3d4a37] mb-5">
+            Мы искали уникальное место для нашего праздника и нашли уютный
+            ресторан на берегу Финского залива.
+          </p>
+          <p className="font-serif italic text-lg sm:text-xl text-[#2d3d2a]">
+            Ресторан «Дача на заливе»
+          </p>
+          <p className="font-sans text-[13px] sm:text-sm text-[#6b7f5c] mt-1">
+            Приморское шоссе, 448
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
+          {[
+            "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=800&q=80",
+          ].map((src, i) => (
+            <div
+              key={i}
+              className="relative overflow-hidden rounded-sm border border-[#c8d3b7] bg-white p-2 shadow-sm animate-fade-up"
+            >
+              <img
+                src={src}
+                alt="Ресторан «Дача на заливе»"
+                loading="lazy"
+                className="block w-full h-56 sm:h-64 md:h-72 object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }

@@ -51,44 +51,12 @@ function Index() {
           <div className="animate-fade-up order-2 md:order-1 relative text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-3 mb-7 md:mb-8 text-[#6b7f5c]">
               <span className="block h-px w-8 sm:w-10 bg-[#8ba173]" />
-              <span className="relative inline-block font-serif italic text-2xl sm:text-3xl md:text-4xl text-[#2d3d2a]">
-                {/* Thin red ribbon weaving around the date */}
-                <svg
-                  aria-hidden
-                  viewBox="0 0 260 80"
-                  preserveAspectRatio="none"
-                  className="pointer-events-none absolute inset-0 w-full h-full overflow-visible"
-                >
-                  <defs>
-                    <linearGradient id="ribbon" x1="0" x2="1" y1="0" y2="0">
-                      <stop offset="0%" stopColor="#a12a2a" stopOpacity="0.35" />
-                      <stop offset="20%" stopColor="#b83232" stopOpacity="1" />
-                      <stop offset="80%" stopColor="#b83232" stopOpacity="1" />
-                      <stop offset="100%" stopColor="#a12a2a" stopOpacity="0.35" />
-                    </linearGradient>
-                  </defs>
-                  {/* Behind the text (darker) */}
-                  <path
-                    d="M -20 55 C 40 80, 70 20, 130 40 S 220 70, 285 25"
-                    fill="none"
-                    stroke="#7a1f1f"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    opacity="0.55"
-                  />
-                  {/* In front (brighter) — weaving effect */}
-                  <path
-                    d="M -10 50 C 45 15, 80 65, 135 45 S 215 20, 275 55"
-                    fill="none"
-                    stroke="url(#ribbon)"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="relative">08.08.2026</span>
+              <span className="font-serif italic text-2xl sm:text-3xl md:text-4xl text-[#2d3d2a]">
+                08.08.2026
               </span>
               <span className="block h-px w-8 sm:w-10 bg-[#8ba173]" />
             </div>
+
 
 
 

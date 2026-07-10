@@ -83,30 +83,7 @@ function Index() {
                   суббота
                 </div>
               </div>
-              <span className="hidden sm:block w-px bg-[#b8c7a5]" />
-              <span className="sm:hidden block h-px w-16 bg-[#b8c7a5]" />
-              <div>
-                <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#6b7f5c] mb-1">
-                  где
-                </div>
-                <div className="italic text-xl md:text-[22px] text-[#2d3d2a] leading-tight">
-                  Дача на заливе
-                </div>
-                <div className="font-sans text-xs text-[#6b7f5c] mt-1">
-                  Санкт-Петербург, Приморское ш., 448
-                </div>
-              </div>
             </div>
-
-            <a
-              href="#rsvp"
-              className="group inline-flex items-center justify-center gap-3 bg-[#4a5f3f] border border-[#4a5f3f] px-8 sm:px-10 py-3.5 sm:py-4 font-sans text-[10px] sm:text-[11px] tracking-[0.3em] sm:tracking-[0.35em] uppercase text-[#f7f6f1] hover:bg-[#5c7550] transition-all duration-500"
-            >
-              <span>стать свидетелем чуда</span>
-              <span aria-hidden className="transition-transform group-hover:translate-x-1">
-                →
-              </span>
-            </a>
           </div>
 
           {/* Right column — photo on the main background */}

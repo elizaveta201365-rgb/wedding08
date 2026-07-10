@@ -113,65 +113,13 @@ function Index() {
             </a>
           </div>
 
-          {/* Right column — photo card with overlay */}
+          {/* Right column — photo on the main background */}
           <div className="relative order-1 md:order-2">
-            <div className="relative aspect-[3/4] w-full max-w-md mx-auto overflow-hidden rounded-sm shadow-[0_30px_60px_-20px_rgba(45,61,42,0.4)] animate-fade-up">
-              <img
-                src={photoBooth.url}
-                alt="Андрей и Елизавета"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-              {/* Dark elegant overlay */}
-              <div
-                aria-hidden
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "linear-gradient(180deg, rgba(45,61,42,0.55) 0%, rgba(45,61,42,0.15) 40%, rgba(45,61,42,0.2) 70%, rgba(45,61,42,0.8) 100%)",
-                }}
-              />
-
-              {/* Top corner label */}
-              <div className="absolute top-5 left-5 right-5 flex items-center justify-between text-[#f4ead8]">
-                <span className="font-sans uppercase tracking-[0.35em] text-[9px] opacity-90">
-                  свадьба
-                </span>
-                <span className="font-sans uppercase tracking-[0.35em] text-[9px] opacity-90">
-                  08.08.26
-                </span>
-              </div>
-
-              {/* Names overlaid */}
-              <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center text-[#f4ead8] px-6">
-                <h1 className="italic leading-[0.95] tracking-tight drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
-                  <span className="block text-5xl md:text-6xl lg:text-7xl">
-                    Андрей
-                  </span>
-                  <span className="block italic text-2xl md:text-3xl text-[#e6c99b] my-2">
-                    &amp;
-                  </span>
-                  <span className="block text-5xl md:text-6xl lg:text-7xl">
-                    Елизавета
-                  </span>
-                </h1>
-                <div className="mt-5 flex items-center justify-center gap-3 text-[#e6c99b]">
-                  <span className="h-px w-8 bg-[#e6c99b]/60" />
-                  <span className="italic text-sm tracking-widest">
-                    08.08.2026
-                  </span>
-                  <span className="h-px w-8 bg-[#e6c99b]/60" />
-                </div>
-              </div>
-
-              {/* Bottom quote */}
-              <div className="absolute bottom-6 inset-x-6 text-center text-[#f4ead8]/90">
-                <p className="italic text-[13px] leading-relaxed">
-                  «не существует чести или семи чудес в мире.
-                  <br />
-                  есть только одно — это любовь»
-                </p>
-              </div>
-            </div>
+            <img
+              src={photoBooth.url}
+              alt="Андрей и Елизавета"
+              className="relative block w-full max-w-md mx-auto h-auto animate-fade-up"
+            />
 
             {/* Small blossom accent near photo */}
             <img
@@ -181,6 +129,7 @@ function Index() {
               className="pointer-events-none select-none absolute -top-10 -right-8 w-40 opacity-90 rotate-[25deg]"
             />
           </div>
+
         </div>
 
         {/* Bottom hairline */}

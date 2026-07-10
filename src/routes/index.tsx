@@ -122,6 +122,9 @@ function Index() {
 
           {/* Right column — photo on the main background */}
           <div className="relative order-1 md:order-2">
+            <h1 className="font-serif italic text-4xl sm:text-5xl md:text-6xl text-[#2d3d2a] text-center leading-tight mb-6 sm:mb-8 animate-fade-up">
+              Приглашение<br />на свадьбу
+            </h1>
             <img
               src={photoBooth.url}
               alt="Андрей и Елизавета"

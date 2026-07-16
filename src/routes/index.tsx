@@ -455,7 +455,7 @@ function Index() {
             </span>
           </div>
         </div>
-        <div className="relative mt-10 sm:mt-14 md:mt-16 flex justify-center animate-fade-up">
+        <div className="relative mt-5 sm:mt-7 md:mt-8 flex justify-center animate-fade-up">
           <img
             src={eucalyptus.url}
             alt=""

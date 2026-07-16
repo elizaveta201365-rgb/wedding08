@@ -198,6 +198,71 @@ function Index() {
           </a>
         </div>
       </section>
+
+      {/* Расписание */}
+      <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 pb-16 sm:pb-20 md:pb-24">
+        <div className="text-center mb-10 sm:mb-14 animate-fade-up">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-5 text-[#6b7f5c]">
+            <span className="block h-px w-6 sm:w-14 bg-[#8ba173]" />
+            <span className="font-sans uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[10px] sm:text-xs">
+              программа дня
+            </span>
+            <span className="block h-px w-6 sm:w-14 bg-[#8ba173]" />
+          </div>
+          <h2 className="font-serif italic text-2xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
+            Расписание торжества
+          </h2>
+        </div>
+
+        <div className="relative mx-auto max-w-2xl">
+          {/* Vertical line */}
+          <span
+            aria-hidden
+            className="absolute left-[26px] sm:left-1/2 top-2 bottom-2 w-px bg-[#c8d3b7] sm:-translate-x-1/2"
+          />
+
+          <ol className="space-y-8 sm:space-y-12">
+            {[
+              { time: "15:30", icon: "🥂", title: "Сбор гостей", text: "Фуршет, первые встречи и хорошее настроение." },
+              { time: "16:00", icon: "💍", title: "Начало праздника", text: "Начинается история нашего дня." },
+              { time: "Далее", icon: "💫", title: "Веселье и сюрпризы", text: "Вас ждут искренние эмоции, улыбки, сюрпризы и много весёлых моментов." },
+              { time: "Вечер", icon: "🎂", title: "Свадебный торт", text: "Самое время попробовать свадебный торт." },
+              { time: "До самого конца", icon: "🌙", title: "Тёплый вечер вместе", text: "Наслаждаемся вечером и компанией друг друга." },
+            ].map((item, i) => (
+              <li
+                key={i}
+                className={`relative animate-fade-up sm:grid sm:grid-cols-2 sm:gap-10 sm:items-center ${
+                  i % 2 === 1 ? "sm:[&>*:first-child]:col-start-2 sm:[&>*:first-child]:text-left sm:[&>*:last-child]:col-start-1 sm:[&>*:last-child]:row-start-1 sm:[&>*:last-child]:text-right" : ""
+                }`}
+              >
+                {/* Icon marker */}
+                <span
+                  className="absolute left-0 sm:left-1/2 top-0 -translate-x-0 sm:-translate-x-1/2 flex items-center justify-center w-[52px] h-[52px] sm:w-14 sm:h-14 rounded-full bg-[#f7f6f1] border border-[#c8d3b7] shadow-sm text-2xl sm:text-3xl z-10"
+                  aria-hidden
+                >
+                  {item.icon}
+                </span>
+
+                {/* Content */}
+                <div className={`pl-[76px] sm:pl-0 ${i % 2 === 0 ? "sm:pr-12 sm:text-right" : "sm:pl-12 sm:text-left"}`}>
+                  <p className="font-serif italic text-lg sm:text-xl text-[#6b7f5c] mb-1">
+                    {item.time}
+                  </p>
+                  <h3 className="font-serif italic text-xl sm:text-2xl md:text-3xl text-[#2d3d2a] mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="font-sans text-[13px] sm:text-sm leading-[1.8] text-[#3d4a37]">
+                    {item.text}
+                  </p>
+                </div>
+
+                {/* Spacer for alternating layout on desktop */}
+                <div className="hidden sm:block" />
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
     </main>
   );
 }

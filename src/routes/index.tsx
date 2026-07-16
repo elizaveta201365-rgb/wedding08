@@ -441,16 +441,14 @@ function Index() {
 
       {/* До встречи */}
       <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 pb-8 sm:pb-10 md:pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 items-center max-w-4xl mx-auto">
-          <div className="relative order-1 animate-fade-up flex justify-center">
-            <img
-              src={corgi.url}
-              alt="Корги"
-              loading="lazy"
-              className="block w-full max-w-[130px] sm:max-w-[160px] md:max-w-[190px] h-auto"
-            />
-          </div>
-          <div className="order-2 animate-fade-up text-center">
+        <div className="relative max-w-4xl mx-auto flex items-center justify-center">
+          <img
+            src={corgi.url}
+            alt="Корги"
+            loading="lazy"
+            className="absolute left-0 -translate-x-4 sm:-translate-x-8 md:-translate-x-12 block w-full max-w-[104px] sm:max-w-[128px] md:max-w-[152px] h-auto animate-fade-up"
+          />
+          <div className="animate-fade-up text-center">
             <span className="font-serif italic text-2xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
               До встречи
             </span>

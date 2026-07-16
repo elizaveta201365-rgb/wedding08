@@ -452,7 +452,7 @@ function Index() {
             src={cat.url}
             alt="Кот"
             loading="lazy"
-            className="absolute right-0 translate-x-2 sm:-translate-x-6 md:-translate-x-8 block w-full max-w-[104px] sm:max-w-[128px] md:max-w-[152px] h-auto animate-fade-up"
+            className="absolute right-0 translate-x-6 sm:-translate-x-6 md:-translate-x-8 block w-full max-w-[104px] sm:max-w-[128px] md:max-w-[152px] h-auto animate-fade-up"
           />
           <div className="animate-fade-up text-center">
             <span className="font-serif italic text-2xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">

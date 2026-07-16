@@ -140,8 +140,8 @@ function Index() {
           {[
             { src: venue1.url, cls: "top-0 left-0 w-[62%] sm:w-[55%] md:w-[48%] h-[52%] rotate-[-4deg] z-10" },
             { src: venue2.url, cls: "top-[6%] right-0 w-[48%] sm:w-[42%] md:w-[38%] h-[46%] rotate-[5deg] z-20" },
-            { src: venue3.url, cls: "top-[38%] left-[10%] sm:left-[14%] w-[52%] sm:w-[46%] md:w-[42%] h-[46%] rotate-[3deg] z-30" },
-            { src: venue4.url, cls: "bottom-0 right-[4%] w-[54%] sm:w-[48%] md:w-[44%] h-[48%] rotate-[-6deg] z-20" },
+            { src: venue4.url, cls: "top-[38%] left-[10%] sm:left-[14%] w-[52%] sm:w-[46%] md:w-[42%] h-[46%] rotate-[3deg] z-30" },
+            { src: venue3.url, cls: "bottom-0 right-[4%] w-[54%] sm:w-[48%] md:w-[44%] h-[48%] rotate-[-6deg] z-20" },
             { src: venue5.url, cls: "bottom-[8%] left-0 w-[40%] sm:w-[36%] md:w-[32%] h-[38%] rotate-[7deg] z-40" },
           ].map((p, i) => (
             <div

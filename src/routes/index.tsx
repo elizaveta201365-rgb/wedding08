@@ -300,7 +300,7 @@ function Index() {
             <span className="block h-px w-6 sm:w-14 bg-[#8ba173]" />
           </div>
           <p className="font-sans text-[12px] sm:text-sm text-[#6b7f5c] mt-2 sm:mt-3 px-2 leading-relaxed">
-            Помогите нам сделать вечер идеальным
+            Расскажите немного о своих предпочтениях — подберём атмосферу, в которой каждому будет приятно и весело.
           </p>
         </div>
 

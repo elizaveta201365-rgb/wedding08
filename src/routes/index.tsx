@@ -82,7 +82,7 @@ function Index() {
         src={eucalyptus.url}
         alt=""
         aria-hidden
-        className="pointer-events-none select-none absolute top-24 sm:top-28 md:top-32 -right-16 sm:-right-20 md:-right-24 w-[200px] sm:w-[260px] md:w-[320px] opacity-95 rotate-[25deg] -scale-x-100"
+        className="pointer-events-none select-none absolute top-[280px] sm:top-[340px] md:top-[400px] -right-16 sm:-right-20 md:-right-24 w-[200px] sm:w-[260px] md:w-[320px] opacity-95 rotate-[25deg] -scale-x-100"
       />
       <img
         src={eucalyptus.url}
@@ -122,7 +122,7 @@ function Index() {
           {/* Right column — photo on the main background */}
           <div className="relative order-1 md:order-2">
             <h1 className="font-serif italic uppercase text-4xl sm:text-5xl md:text-6xl text-[#2d3d2a] text-center leading-tight mt-20 sm:mt-24 md:mt-28 mb-6 sm:mb-8 animate-fade-up">
-              ПРИГЛАШЕНИЕ<br />НА СВАДЬБУ
+              ПРИГЛАШАЕМ<br />НА СВАДЬБУ
             </h1>
             <img
               src={photoBooth.url}

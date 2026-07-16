@@ -446,7 +446,7 @@ function Index() {
             src={corgi.url}
             alt="Корги"
             loading="lazy"
-            className="absolute left-0 -translate-x-2 sm:translate-x-6 md:translate-x-8 block w-full max-w-[104px] sm:max-w-[128px] md:max-w-[152px] h-auto animate-fade-up"
+            className="absolute left-0 -translate-x-6 sm:translate-x-6 md:translate-x-8 block w-full max-w-[104px] sm:max-w-[128px] md:max-w-[152px] h-auto animate-fade-up"
           />
           <img
             src={cat.url}

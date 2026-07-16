@@ -393,8 +393,8 @@ function Index() {
                         value={d}
                         checked={drink === d}
                         onChange={(e) => setDrink(e.target.value)}
-                        required
                         className="sr-only"
+
                       />
                       <span
                         aria-hidden

@@ -130,19 +130,8 @@ function Index() {
               className="relative block w-full max-w-[280px] sm:max-w-sm md:max-w-md mx-auto h-auto animate-fade-up"
             />
 
-            {/* Small eucalyptus accent near photo */}
-            <img
-              src={eucalyptus.url}
-              alt=""
-              aria-hidden
-              className="pointer-events-none select-none absolute -top-8 -right-4 sm:-top-10 sm:-right-8 w-28 sm:w-36 md:w-44 opacity-90 rotate-[25deg]"
-            />
-            <img
-              src={eucalyptus.url}
-              alt=""
-              aria-hidden
-              className="pointer-events-none select-none absolute -bottom-6 -left-4 sm:-bottom-8 sm:-left-8 w-24 sm:w-32 md:w-40 opacity-80 rotate-[200deg]"
-            />
+
+
           </div>
 
         </div>

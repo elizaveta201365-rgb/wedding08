@@ -279,6 +279,114 @@ function Index() {
           </ol>
         </div>
       </section>
+
+      {/* Анкета гостя */}
+      <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 pb-16 sm:pb-20 md:pb-24">
+        <div className="text-center mb-10 sm:mb-14 animate-fade-up">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-5 text-[#6b7f5c]">
+            <span className="block h-px w-6 sm:w-14 bg-[#8ba173]" />
+            <span className="font-sans uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[10px] sm:text-xs">
+              несколько вопросов
+            </span>
+            <span className="block h-px w-6 sm:w-14 bg-[#8ba173]" />
+          </div>
+          <h2 className="font-serif italic text-2xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
+            Анкета гостя
+          </h2>
+          <p className="font-sans text-[12px] sm:text-sm text-[#6b7f5c] mt-2 sm:mt-3 px-2 leading-relaxed">
+            Помогите нам сделать вечер идеальным
+          </p>
+        </div>
+
+        <div className="mx-auto w-full max-w-xl bg-white/60 backdrop-blur-sm border border-[#c8d3b7] rounded-sm shadow-lg p-6 sm:p-10 animate-fade-up">
+          {submitted ? (
+            <div className="text-center py-6">
+              <p className="font-serif italic text-2xl sm:text-3xl text-[#2d3d2a] mb-3">
+                Спасибо, {name || "друг"}!
+              </p>
+              <p className="font-sans text-sm text-[#3d4a37] leading-[1.8]">
+                Мы получили ваш ответ и с нетерпением ждём встречи.
+              </p>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-7">
+              <div>
+                <label className="block font-sans uppercase tracking-[0.2em] text-[11px] sm:text-xs text-[#6b7f5c] mb-2">
+                  Имя
+                </label>
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                  maxLength={100}
+                  placeholder="Ваше имя"
+                  className="w-full bg-transparent border-b border-[#c8d3b7] focus:border-[#6b7f5c] outline-none py-2 font-serif italic text-lg text-[#2d3d2a] placeholder:text-[#a8b39a] transition-colors"
+                />
+              </div>
+
+              <div>
+                <label className="block font-sans uppercase tracking-[0.2em] text-[11px] sm:text-xs text-[#6b7f5c] mb-3">
+                  Какой напиток вы предпочитаете?
+                </label>
+                <div className="grid grid-cols-2 gap-2 sm:gap-3">
+                  {drinks.map((d) => (
+                    <label
+                      key={d}
+                      className={`cursor-pointer flex items-center gap-2 border rounded-sm px-3 py-2.5 font-sans text-[13px] sm:text-sm transition-colors ${
+                        drink === d
+                          ? "border-[#6b7f5c] bg-[#e5ead8] text-[#2d3d2a]"
+                          : "border-[#c8d3b7] text-[#3d4a37] hover:border-[#8ba173]"
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        name="drink"
+                        value={d}
+                        checked={drink === d}
+                        onChange={(e) => setDrink(e.target.value)}
+                        required
+                        className="sr-only"
+                      />
+                      <span
+                        aria-hidden
+                        className={`inline-block w-3 h-3 rounded-full border ${
+                          drink === d ? "bg-[#6b7f5c] border-[#6b7f5c]" : "border-[#8ba173]"
+                        }`}
+                      />
+                      {d}
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <label className="block font-sans uppercase tracking-[0.2em] text-[11px] sm:text-xs text-[#6b7f5c] mb-2">
+                  Какую песню вы хотите услышать?
+                </label>
+                <textarea
+                  value={song}
+                  onChange={(e) => setSong(e.target.value)}
+                  maxLength={500}
+                  rows={3}
+                  placeholder="Название и исполнитель"
+                  className="w-full bg-transparent border border-[#c8d3b7] focus:border-[#6b7f5c] outline-none rounded-sm p-3 font-sans text-sm text-[#2d3d2a] placeholder:text-[#a8b39a] transition-colors resize-none"
+                />
+              </div>
+
+              <div className="pt-2 text-center">
+                <button
+                  type="submit"
+                  className="inline-block font-sans uppercase tracking-[0.25em] text-xs sm:text-sm text-[#f7f6f1] bg-[#6b7f5c] hover:bg-[#2d3d2a] transition-colors px-8 sm:px-10 py-3 sm:py-3.5 rounded-sm shadow-md"
+                >
+                  Отправить
+                </button>
+              </div>
+            </form>
+          )}
+        </div>
+      </section>
     </main>
   );
 }
+

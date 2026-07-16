@@ -30,9 +30,25 @@ function Index() {
     "Без алкоголя",
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSending(true);
+    setError("");
+    try {
+      const formData = new FormData();
+      formData.append("name", name);
+      formData.append("drink", drink);
+      formData.append("song", song);
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbw_lXHK5YDipy-w1HEX5-Fn2yMSE-go-m39W-XAqbfxOEFwQqSoc9NZAdFWA6AM6jvm/exec",
+        { method: "POST", body: formData, mode: "no-cors" },
+      );
+      setSubmitted(true);
+    } catch {
+      setError("Не удалось отправить. Попробуйте ещё раз.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (

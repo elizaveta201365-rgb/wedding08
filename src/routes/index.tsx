@@ -126,10 +126,11 @@ function Index() {
             </h1>
             <div
               className="text-center text-[#2d3d2a] leading-none animate-fade-up mb-6 sm:mb-8"
-              style={{ fontFamily: "'Pinyon Script', cursive", fontSize: "clamp(3.5rem, 14vw, 6.5rem)" }}
+              style={{ fontFamily: "'Monsieur La Doulaise', cursive", fontSize: "clamp(4rem, 16vw, 7.5rem)" }}
             >
               An &amp; Li
             </div>
+
 
             <img
               src={photoBooth.url}

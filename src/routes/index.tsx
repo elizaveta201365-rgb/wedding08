@@ -17,6 +17,8 @@ function Index() {
   const [drink, setDrink] = useState("");
   const [song, setSong] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
 
   const drinks = [
     "Шампанское",

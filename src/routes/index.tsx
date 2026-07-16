@@ -318,7 +318,7 @@ function Index() {
           <div className="relative order-1 md:order-2 animate-fade-up">
             <div className="overflow-hidden rounded-sm border border-[#c8d3b7] bg-white p-1.5 shadow-lg">
               <img
-                src={palette}
+                src={palette.url}
                 alt="Природная палитра — оттенки нашей свадьбы"
                 loading="lazy"
                 width={1024}

@@ -106,11 +106,6 @@ function Index() {
         </div>
 
         {/* Bottom hairline */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-3 text-[#6b7f5c] whitespace-nowrap">
-          <span className="h-px w-8 sm:w-10 bg-[#8ba173]" />
-          <span className="italic text-xs sm:text-sm">навсегда вместе</span>
-          <span className="h-px w-8 sm:w-10 bg-[#8ba173]" />
-        </div>
       </section>
 
       {/* Место проведения */}

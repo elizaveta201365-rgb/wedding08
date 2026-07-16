@@ -93,7 +93,7 @@ function Index() {
 
 
       <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 py-14 sm:py-16 md:py-20 min-h-screen flex items-center">
-        <div className="grid grid-cols-1 md:grid-cols-[1.05fr_1fr] gap-10 sm:gap-12 md:gap-14 items-center w-full">
+        <div className="grid grid-cols-1 md:grid-cols-[1.05fr_1fr] gap-5 sm:gap-6 md:gap-14 items-center w-full">
           {/* Left column — invitation text */}
           <div className="animate-fade-up order-2 md:order-1 relative text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-3 mb-7 md:mb-8 text-[#6b7f5c]">

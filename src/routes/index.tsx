@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import palette from "@/assets/palette.jpg.asset.json";
 import corgi from "@/assets/corgi-final.png.asset.json";
+import cat from "@/assets/cat.png.asset.json";
 import photoBooth from "@/assets/photo-booth.png.asset.json";
 import eucalyptus from "@/assets/eucalyptus.png.asset.json";
 import venue1 from "@/assets/venue-1.jpg.asset.json";

@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import photoBooth from "@/assets/photo-booth.png.asset.json";
 import eucalyptus from "@/assets/eucalyptus.png.asset.json";
 import venue1 from "@/assets/venue-1.jpg.asset.json";

@@ -82,7 +82,7 @@ function Index() {
         src={eucalyptus.url}
         alt=""
         aria-hidden
-        className="pointer-events-none select-none absolute top-1/2 -right-48 w-[320px] opacity-60 rotate-[65deg] hidden lg:block"
+        className="pointer-events-none select-none absolute -top-24 -right-24 w-[280px] sm:w-[380px] md:w-[460px] opacity-95 rotate-[25deg] -scale-x-100"
       />
       <img
         src={eucalyptus.url}
@@ -90,6 +90,7 @@ function Index() {
         aria-hidden
         className="pointer-events-none select-none absolute top-1/3 -left-40 w-[260px] opacity-50 rotate-[110deg] hidden lg:block"
       />
+
 
       <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 py-14 sm:py-16 md:py-20 min-h-screen flex items-center">
         <div className="grid grid-cols-1 md:grid-cols-[1.05fr_1fr] gap-10 sm:gap-12 md:gap-14 items-center w-full">
@@ -129,19 +130,8 @@ function Index() {
               className="relative block w-full max-w-[280px] sm:max-w-sm md:max-w-md mx-auto h-auto animate-fade-up"
             />
 
-            {/* Small eucalyptus accent near photo */}
-            <img
-              src={eucalyptus.url}
-              alt=""
-              aria-hidden
-              className="pointer-events-none select-none absolute -top-8 -right-4 sm:-top-10 sm:-right-8 w-28 sm:w-36 md:w-44 opacity-90 rotate-[25deg]"
-            />
-            <img
-              src={eucalyptus.url}
-              alt=""
-              aria-hidden
-              className="pointer-events-none select-none absolute -bottom-6 -left-4 sm:-bottom-8 sm:-left-8 w-24 sm:w-32 md:w-40 opacity-80 rotate-[200deg]"
-            />
+
+
           </div>
 
         </div>

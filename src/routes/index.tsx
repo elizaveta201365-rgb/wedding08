@@ -77,7 +77,7 @@ function Index() {
         src={eucalyptus.url}
         alt=""
         aria-hidden
-        className="pointer-events-none select-none absolute -bottom-16 left-1/2 -translate-x-1/2 w-[320px] sm:w-[440px] md:w-[560px] opacity-90 rotate-90"
+        className="pointer-events-none select-none absolute -bottom-28 -right-24 w-[300px] sm:w-[400px] md:w-[500px] opacity-90 rotate-[155deg]"
       />
       <img
         src={eucalyptus.url}

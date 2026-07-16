@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import palette from "@/assets/palette.jpg.asset.json";
 import corgi from "@/assets/corgi-final.png.asset.json";
+import cat from "@/assets/cat.png.asset.json";
 import photoBooth from "@/assets/photo-booth.png.asset.json";
 import eucalyptus from "@/assets/eucalyptus.png.asset.json";
 import venue1 from "@/assets/venue-1.jpg.asset.json";
@@ -447,6 +448,12 @@ function Index() {
             alt="Корги"
             loading="lazy"
             className="absolute left-0 translate-x-4 sm:translate-x-6 md:translate-x-8 block w-full max-w-[104px] sm:max-w-[128px] md:max-w-[152px] h-auto animate-fade-up"
+          />
+          <img
+            src={cat.url}
+            alt="Кот"
+            loading="lazy"
+            className="absolute right-0 -translate-x-4 sm:-translate-x-6 md:-translate-x-8 block w-full max-w-[104px] sm:max-w-[128px] md:max-w-[152px] h-auto animate-fade-up"
           />
           <div className="animate-fade-up text-center">
             <span className="font-serif italic text-2xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">

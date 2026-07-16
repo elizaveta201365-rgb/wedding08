@@ -86,8 +86,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Андрей и Елизавета — 08.08.2026" },
       { name: "twitter:description", content: "Приглашение на свадьбу Андрея и Елизаветы. 8 августа 2026, Санкт-Петербург." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5h9dtdUlinPRKZNo8raNSs980ix1/social-images/social-1784214571173-Снимок_экрана_2026-07-16_180919.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5h9dtdUlinPRKZNo8raNSs980ix1/social-images/social-1784214571173-Снимок_экрана_2026-07-16_180919.webp" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5h9dtdUlinPRKZNo8raNSs980ix1/social-images/social-1784214904770-Gemini_Generated_Image_f823wif823wif823.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5h9dtdUlinPRKZNo8raNSs980ix1/social-images/social-1784214904770-Gemini_Generated_Image_f823wif823wif823.webp" },
     ],
     links: [
       {

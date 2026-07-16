@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import palette from "@/assets/palette.jpg.asset.json";
-import corgi from "@/assets/corgi.png.asset.json";
+import corgi from "@/assets/corgi-ball.png.asset.json";
 import photoBooth from "@/assets/photo-booth.png.asset.json";
 import eucalyptus from "@/assets/eucalyptus.png.asset.json";
 import venue1 from "@/assets/venue-1.jpg.asset.json";
@@ -447,7 +447,7 @@ function Index() {
               src={corgi.url}
               alt="Корги"
               loading="lazy"
-              className="block w-full max-w-[260px] sm:max-w-xs md:max-w-sm h-auto"
+              className="block w-full max-w-[130px] sm:max-w-[160px] md:max-w-[190px] h-auto"
             />
           </div>
           <div className="order-2 animate-fade-up text-center md:text-left">

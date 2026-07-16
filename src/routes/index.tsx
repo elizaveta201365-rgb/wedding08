@@ -13,6 +13,26 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const [name, setName] = useState("");
+  const [drink, setDrink] = useState("");
+  const [song, setSong] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const drinks = [
+    "Шампанское",
+    "Вино белое",
+    "Вино красное",
+    "Ром",
+    "Виски",
+    "Медовуха",
+    "Без алкоголя",
+  ];
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+  };
+
   return (
     <main className="min-h-screen w-full bg-[#f7f6f1] text-[#3d4a37] overflow-hidden relative font-serif">
       {/* Soft ambient background */}

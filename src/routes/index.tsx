@@ -121,9 +121,16 @@ function Index() {
 
           {/* Right column — photo on the main background */}
           <div className="relative order-1 md:order-2">
-            <h1 className="font-serif italic uppercase text-4xl sm:text-5xl md:text-6xl text-[#2d3d2a] text-center leading-tight mt-20 sm:mt-24 md:mt-28 mb-6 sm:mb-8 animate-fade-up">
+            <h1 className="font-serif italic uppercase text-4xl sm:text-5xl md:text-6xl text-[#2d3d2a] text-center leading-tight mt-20 sm:mt-24 md:mt-28 mb-3 sm:mb-4 animate-fade-up">
               ПРИГЛАШАЕМ<br />НА СВАДЬБУ
             </h1>
+            <div
+              className="text-center text-[#2d3d2a] leading-none animate-fade-up mb-6 sm:mb-8"
+              style={{ fontFamily: "'Pinyon Script', cursive", fontSize: "clamp(3.5rem, 14vw, 6.5rem)" }}
+            >
+              An &amp; Li
+            </div>
+
             <img
               src={photoBooth.url}
               alt="Андрей и Елизавета"

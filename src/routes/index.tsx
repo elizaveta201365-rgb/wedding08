@@ -435,7 +435,7 @@ function Index() {
       </section>
 
       {/* До встречи */}
-      <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 pt-16 sm:pt-20 md:pt-24 pb-8 sm:pb-10 md:pb-12">
+      <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 pt-16 sm:pt-20 md:pt-24 pb-4 sm:pb-5 md:pb-6">
         <div className="relative max-w-4xl mx-auto flex items-center justify-center">
           <img
             src={corgi.url}
@@ -455,7 +455,7 @@ function Index() {
             </span>
           </div>
         </div>
-        <div className="relative mt-10 sm:mt-14 md:mt-16 flex justify-center animate-fade-up">
+        <div className="relative mt-5 sm:mt-7 md:mt-8 flex justify-center animate-fade-up">
           <img
             src={eucalyptus.url}
             alt=""

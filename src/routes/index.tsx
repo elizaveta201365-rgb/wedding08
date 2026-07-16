@@ -393,11 +393,15 @@ function Index() {
               </div>
 
               <div className="pt-2 text-center">
+                {error && (
+                  <p className="font-sans text-sm text-red-600 mb-3">{error}</p>
+                )}
                 <button
                   type="submit"
-                  className="inline-block font-sans uppercase tracking-[0.25em] text-xs sm:text-sm text-[#f7f6f1] bg-[#6b7f5c] hover:bg-[#2d3d2a] transition-colors px-8 sm:px-10 py-3 sm:py-3.5 rounded-sm shadow-md"
+                  disabled={sending}
+                  className="inline-block font-sans uppercase tracking-[0.25em] text-xs sm:text-sm text-[#f7f6f1] bg-[#6b7f5c] hover:bg-[#2d3d2a] transition-colors px-8 sm:px-10 py-3 sm:py-3.5 rounded-sm shadow-md disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Отправить
+                  {sending ? "Отправка…" : "Отправить"}
                 </button>
               </div>
             </form>

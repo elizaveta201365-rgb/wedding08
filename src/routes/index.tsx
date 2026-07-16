@@ -461,6 +461,14 @@ function Index() {
             </span>
           </div>
         </div>
+        <div className="relative mt-10 sm:mt-14 md:mt-16 flex justify-center animate-fade-up">
+          <img
+            src={eucalyptus.url}
+            alt=""
+            aria-hidden
+            className="pointer-events-none select-none w-[280px] sm:w-[380px] md:w-[480px] h-auto rotate-90 opacity-90"
+          />
+        </div>
       </section>
     </main>
   );

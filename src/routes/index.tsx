@@ -77,7 +77,7 @@ function Index() {
         src={eucalyptus.url}
         alt=""
         aria-hidden
-        className="pointer-events-none select-none absolute -bottom-16 left-1/2 -translate-x-1/2 w-[320px] sm:w-[440px] md:w-[560px] opacity-90 rotate-90"
+        className="pointer-events-none select-none absolute -bottom-28 -right-24 w-[300px] sm:w-[400px] md:w-[500px] opacity-90 rotate-[155deg]"
       />
       <img
         src={eucalyptus.url}
@@ -460,6 +460,14 @@ function Index() {
               До встречи
             </span>
           </div>
+        </div>
+        <div className="relative mt-10 sm:mt-14 md:mt-16 flex justify-center animate-fade-up">
+          <img
+            src={eucalyptus.url}
+            alt=""
+            aria-hidden
+            className="pointer-events-none select-none w-[280px] sm:w-[380px] md:w-[480px] h-auto rotate-90 opacity-90"
+          />
         </div>
       </section>
     </main>

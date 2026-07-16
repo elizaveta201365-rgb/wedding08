@@ -35,6 +35,10 @@ function Index() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!drink) {
+      setError("Пожалуйста, выберите напиток.");
+      return;
+    }
     setSending(true);
     setError("");
     try {
@@ -53,6 +57,7 @@ function Index() {
       setSending(false);
     }
   };
+
 
   return (
     <main className="min-h-screen w-full bg-[#f7f6f1] text-[#3d4a37] overflow-hidden relative font-serif">
@@ -388,8 +393,8 @@ function Index() {
                         value={d}
                         checked={drink === d}
                         onChange={(e) => setDrink(e.target.value)}
-                        required
                         className="sr-only"
+
                       />
                       <span
                         aria-hidden

@@ -158,6 +158,46 @@ function Index() {
           ))}
         </div>
       </section>
+
+      {/* Карта */}
+      <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 pb-16 sm:pb-20 md:pb-24">
+        <div className="text-center mb-8 sm:mb-10 animate-fade-up">
+          <div className="flex items-center justify-center gap-3 mb-5 text-[#6b7f5c]">
+            <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
+            <span className="font-sans uppercase tracking-[0.3em] text-[11px] sm:text-xs">
+              как добраться
+            </span>
+            <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
+          </div>
+          <h2 className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
+            На карте
+          </h2>
+          <p className="font-sans text-[13px] sm:text-sm text-[#6b7f5c] mt-3">
+            Приморское шоссе, 448 — ресторан «Дача на заливе»
+          </p>
+        </div>
+
+        <div className="relative mx-auto w-full max-w-4xl overflow-hidden rounded-sm border border-[#c8d3b7] bg-white p-1.5 shadow-lg animate-fade-up">
+          <iframe
+            title="Карта — Дача на заливе, Приморское шоссе, 448"
+            src="https://yandex.ru/map-widget/v1/?ll=29.823600%2C60.163100&mode=search&sctx=ZAAAAAgBEAAaKAoSCTMHOx0hzD1AEcdlmXPCbT5AEhIJ4XoUrkfoxT8Rw%2FUoXI%2FbtT8iBQABAgQFKAAwATgAQKACSAFqAnJ1cAB1zczMPZ0BzcxMPqABAKgBALwBAJIB&text=%D0%94%D0%B0%D1%87%D0%B0%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BB%D0%B8%D0%B2%D0%B5%20%D0%9F%D1%80%D0%B8%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%20448&z=15"
+            className="block w-full h-[360px] sm:h-[440px] md:h-[520px]"
+            loading="lazy"
+            allowFullScreen
+          />
+        </div>
+
+        <div className="text-center mt-6 animate-fade-up">
+          <a
+            href="https://yandex.ru/maps/?text=Приморское шоссе 448 Дача на заливе"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block font-sans uppercase tracking-[0.25em] text-[11px] sm:text-xs text-[#6b7f5c] border-b border-[#8ba173] pb-1 hover:text-[#2d3d2a] transition-colors"
+          >
+            открыть в яндекс.картах
+          </a>
+        </div>
+      </section>
     </main>
   );
 }

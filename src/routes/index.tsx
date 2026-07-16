@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import palette from "@/assets/palette.jpg";
 import photoBooth from "@/assets/photo-booth.png.asset.json";
 import eucalyptus from "@/assets/eucalyptus.png.asset.json";
 import venue1 from "@/assets/venue-1.jpg.asset.json";
@@ -286,6 +287,46 @@ function Index() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* Дресс-код */}
+      <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 pb-8 sm:pb-10 md:pb-12">
+        <div className="text-center mb-10 sm:mb-14 animate-fade-up">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-5 text-[#6b7f5c]">
+            <span className="block h-px w-6 sm:w-14 bg-[#8ba173]" />
+            <span className="font-serif italic text-2xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
+              В каком стиле встречаемся
+            </span>
+            <span className="block h-px w-6 sm:w-14 bg-[#8ba173]" />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 items-center max-w-4xl mx-auto">
+          <div className="animate-fade-up order-2 md:order-1">
+            <p className="font-sans text-[14px] sm:text-[15px] leading-[1.8] sm:leading-[1.9] text-[#3d4a37] mb-5">
+              Наша свадьба будет лёгкой, летней и уютной — с природой, водой и
+              атмосферой загородного вечера. Будем рады видеть вас в комфортных
+              нарядах природных оттенков.
+            </p>
+            <p className="font-sans text-[14px] sm:text-[15px] leading-[1.8] sm:leading-[1.9] text-[#3d4a37]">
+              Формат — скорее расслабленный и элегантный, чем строгий: мужчинам
+              не обязательно надевать костюмы и галстуки, а девушкам можно
+              выбрать лёгкие платья и летние образы.
+            </p>
+          </div>
+          <div className="relative order-1 md:order-2 animate-fade-up">
+            <div className="overflow-hidden rounded-sm border border-[#c8d3b7] bg-white p-1.5 shadow-lg">
+              <img
+                src={palette}
+                alt="Природная палитра — оттенки нашей свадьбы"
+                loading="lazy"
+                width={1024}
+                height={1024}
+                className="block w-full h-auto object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

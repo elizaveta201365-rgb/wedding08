@@ -215,13 +215,13 @@ function Index() {
         </div>
 
         <div className="relative mx-auto max-w-2xl">
-          {/* Vertical line */}
+          {/* Vertical timeline line */}
           <span
             aria-hidden
-            className="absolute left-[26px] sm:left-1/2 top-2 bottom-2 w-px bg-[#c8d3b7] sm:-translate-x-1/2"
+            className="absolute left-[26px] sm:left-8 top-4 bottom-4 w-px bg-[#c8d3b7]"
           />
 
-          <ol className="space-y-8 sm:space-y-12">
+          <ol className="space-y-6 sm:space-y-8">
             {[
               { time: "15:30", icon: "🥂", title: "Сбор гостей", text: "Фуршет, первые встречи и хорошее настроение." },
               { time: "16:00", icon: "💍", title: "Начало праздника", text: "Начинается история нашего дня." },
@@ -231,33 +231,28 @@ function Index() {
             ].map((item, i) => (
               <li
                 key={i}
-                className={`relative animate-fade-up sm:grid sm:grid-cols-2 sm:gap-10 sm:items-center ${
-                  i % 2 === 1 ? "sm:[&>*:first-child]:col-start-2 sm:[&>*:first-child]:text-left sm:[&>*:last-child]:col-start-1 sm:[&>*:last-child]:row-start-1 sm:[&>*:last-child]:text-right" : ""
-                }`}
+                className="relative grid grid-cols-[52px_minmax(0,1fr)] sm:grid-cols-[64px_minmax(0,1fr)] gap-4 sm:gap-6 items-start animate-fade-up"
               >
                 {/* Icon marker */}
                 <span
-                  className="absolute left-0 sm:left-1/2 top-0 -translate-x-0 sm:-translate-x-1/2 flex items-center justify-center w-[52px] h-[52px] sm:w-14 sm:h-14 rounded-full bg-[#f7f6f1] border border-[#c8d3b7] shadow-sm text-2xl sm:text-3xl z-10"
+                  className="relative z-10 flex items-center justify-center w-[52px] h-[52px] sm:w-16 sm:h-16 rounded-full bg-[#f7f6f1] border border-[#c8d3b7] shadow-sm text-2xl sm:text-3xl shrink-0"
                   aria-hidden
                 >
                   {item.icon}
                 </span>
 
                 {/* Content */}
-                <div className={`pl-[76px] sm:pl-0 ${i % 2 === 0 ? "sm:pr-12 sm:text-right" : "sm:pl-12 sm:text-left"}`}>
-                  <p className="font-serif italic text-lg sm:text-xl text-[#6b7f5c] mb-1">
+                <div className="min-w-0 pt-1 sm:pt-2">
+                  <p className="font-serif italic text-base sm:text-lg text-[#6b7f5c] mb-1">
                     {item.time}
                   </p>
-                  <h3 className="font-serif italic text-xl sm:text-2xl md:text-3xl text-[#2d3d2a] mb-2">
+                  <h3 className="font-serif italic text-lg sm:text-2xl md:text-3xl text-[#2d3d2a] mb-1.5 sm:mb-2 leading-tight">
                     {item.title}
                   </h3>
-                  <p className="font-sans text-[13px] sm:text-sm leading-[1.8] text-[#3d4a37]">
+                  <p className="font-sans text-[13px] sm:text-sm leading-[1.7] sm:leading-[1.8] text-[#3d4a37]">
                     {item.text}
                   </p>
                 </div>
-
-                {/* Spacer for alternating layout on desktop */}
-                <div className="hidden sm:block" />
               </li>
             ))}
           </ol>

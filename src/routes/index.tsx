@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import palette from "@/assets/palette.jpg.asset.json";
+import corgi from "@/assets/corgi.png.asset.json";
 import photoBooth from "@/assets/photo-booth.png.asset.json";
 import eucalyptus from "@/assets/eucalyptus.png.asset.json";
 import venue1 from "@/assets/venue-1.jpg.asset.json";
@@ -435,6 +436,25 @@ function Index() {
               </div>
             </form>
           )}
+        </div>
+      </section>
+
+      {/* До встречи */}
+      <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 pb-8 sm:pb-10 md:pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 items-center max-w-4xl mx-auto">
+          <div className="relative order-1 animate-fade-up flex justify-center">
+            <img
+              src={corgi.url}
+              alt="Корги"
+              loading="lazy"
+              className="block w-full max-w-[260px] sm:max-w-xs md:max-w-sm h-auto"
+            />
+          </div>
+          <div className="order-2 animate-fade-up text-center md:text-left">
+            <span className="font-serif italic text-2xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
+              До встречи
+            </span>
+          </div>
         </div>
       </section>
     </main>

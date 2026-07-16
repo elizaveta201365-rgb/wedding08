@@ -43,7 +43,7 @@ function Index() {
       formData.append("drink", drink);
       formData.append("song", song);
       await fetch(
-        "https://script.google.com/macros/s/AKfycbw_lXHK5YDipy-w1HEX5-Fn2yMSE-go-m39W-XAqbfxOEFwQqSoc9NZAdFWA6AM6jvm/exec",
+        "https://script.google.com/macros/s/AKfycbxfX24hUEQjEApt6RTaMEckyFQEwMVfzKGZbv7W-zo8MkaPDOHjzYYePqU460RhRaNy/exec",
         { method: "POST", body: formData, mode: "no-cors" },
       );
       setSubmitted(true);

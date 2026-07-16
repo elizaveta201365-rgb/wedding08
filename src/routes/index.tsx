@@ -157,9 +157,6 @@ function Index() {
             </span>
             <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
           </div>
-          <h2 className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
-            Где встречаемся
-          </h2>
         </div>
 
         <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-14 animate-fade-up">

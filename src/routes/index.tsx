@@ -460,7 +460,7 @@ function Index() {
             src={eucalyptus.url}
             alt=""
             aria-hidden
-            className="pointer-events-none select-none w-[280px] sm:w-[380px] md:w-[480px] h-auto rotate-90 opacity-90"
+            className="pointer-events-none select-none w-[280px] sm:w-[380px] md:w-[480px] h-auto rotate-[40deg] opacity-90"
           />
         </div>
       </section>

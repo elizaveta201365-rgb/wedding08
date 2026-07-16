@@ -17,6 +17,8 @@ function Index() {
   const [drink, setDrink] = useState("");
   const [song, setSong] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
 
   const drinks = [
     "Шампанское",
@@ -28,9 +30,25 @@ function Index() {
     "Без алкоголя",
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSending(true);
+    setError("");
+    try {
+      const formData = new FormData();
+      formData.append("name", name);
+      formData.append("drink", drink);
+      formData.append("song", song);
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbw_lXHK5YDipy-w1HEX5-Fn2yMSE-go-m39W-XAqbfxOEFwQqSoc9NZAdFWA6AM6jvm/exec",
+        { method: "POST", body: formData, mode: "no-cors" },
+      );
+      setSubmitted(true);
+    } catch {
+      setError("Не удалось отправить. Попробуйте ещё раз.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -375,11 +393,15 @@ function Index() {
               </div>
 
               <div className="pt-2 text-center">
+                {error && (
+                  <p className="font-sans text-sm text-red-600 mb-3">{error}</p>
+                )}
                 <button
                   type="submit"
-                  className="inline-block font-sans uppercase tracking-[0.25em] text-xs sm:text-sm text-[#f7f6f1] bg-[#6b7f5c] hover:bg-[#2d3d2a] transition-colors px-8 sm:px-10 py-3 sm:py-3.5 rounded-sm shadow-md"
+                  disabled={sending}
+                  className="inline-block font-sans uppercase tracking-[0.25em] text-xs sm:text-sm text-[#f7f6f1] bg-[#6b7f5c] hover:bg-[#2d3d2a] transition-colors px-8 sm:px-10 py-3 sm:py-3.5 rounded-sm shadow-md disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Отправить
+                  {sending ? "Отправка…" : "Отправить"}
                 </button>
               </div>
             </form>

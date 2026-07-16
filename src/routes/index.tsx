@@ -450,7 +450,7 @@ function Index() {
               className="block w-full max-w-[130px] sm:max-w-[160px] md:max-w-[190px] h-auto"
             />
           </div>
-          <div className="order-2 animate-fade-up text-center md:text-left">
+          <div className="order-2 animate-fade-up text-center">
             <span className="font-serif italic text-2xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
               До встречи
             </span>

@@ -200,14 +200,11 @@ function Index() {
         <div className="text-center mb-6 sm:mb-10 animate-fade-up">
           <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-5 text-[#6b7f5c]">
             <span className="block h-px w-6 sm:w-14 bg-[#8ba173]" />
-            <span className="font-sans uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[10px] sm:text-xs">
-              как добраться
+            <span className="font-serif italic text-2xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
+              Как добраться
             </span>
             <span className="block h-px w-6 sm:w-14 bg-[#8ba173]" />
           </div>
-          <h2 className="font-serif italic text-2xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
-            На карте
-          </h2>
           <p className="font-sans text-[12px] sm:text-sm text-[#6b7f5c] mt-2 sm:mt-3 px-2 leading-relaxed">
             Приморское шоссе, 448 — ресторан «Дача на заливе»
           </p>

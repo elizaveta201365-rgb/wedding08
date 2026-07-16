@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import palette from "@/assets/palette.jpg";
+import palette from "@/assets/palette.jpg.asset.json";
 import photoBooth from "@/assets/photo-booth.png.asset.json";
 import eucalyptus from "@/assets/eucalyptus.png.asset.json";
 import venue1 from "@/assets/venue-1.jpg.asset.json";
@@ -318,7 +318,7 @@ function Index() {
           <div className="relative order-1 md:order-2 animate-fade-up">
             <div className="overflow-hidden rounded-sm border border-[#c8d3b7] bg-white p-1.5 shadow-lg">
               <img
-                src={palette}
+                src={palette.url}
                 alt="Природная палитра — оттенки нашей свадьбы"
                 loading="lazy"
                 width={1024}

@@ -294,14 +294,11 @@ function Index() {
         <div className="text-center mb-10 sm:mb-14 animate-fade-up">
           <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-5 text-[#6b7f5c]">
             <span className="block h-px w-6 sm:w-14 bg-[#8ba173]" />
-            <span className="font-sans uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[10px] sm:text-xs">
-              несколько вопросов
+            <span className="font-serif italic text-2xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
+              Анкета гостя
             </span>
             <span className="block h-px w-6 sm:w-14 bg-[#8ba173]" />
           </div>
-          <h2 className="font-serif italic text-2xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
-            Анкета гостя
-          </h2>
           <p className="font-sans text-[12px] sm:text-sm text-[#6b7f5c] mt-2 sm:mt-3 px-2 leading-relaxed">
             Помогите нам сделать вечер идеальным
           </p>

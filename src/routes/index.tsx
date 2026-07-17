@@ -163,36 +163,6 @@ function Index() {
             </span>
             <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
           </div>
-          <svg
-            aria-hidden
-            viewBox="0 0 140 18"
-            className="mx-auto w-36 sm:w-44 h-4 sm:h-5"
-            fill="none"
-          >
-            {/* central stem */}
-            <path d="M14 10 Q 70 10 126 10" stroke="#8ba173" strokeWidth="1" strokeLinecap="round" />
-            {/* tiny berry stems */}
-            <path d="M40 10 L 36 6" stroke="#8ba173" strokeWidth="0.8" strokeLinecap="round" />
-            <path d="M50 10 L 54 6" stroke="#8ba173" strokeWidth="0.8" strokeLinecap="round" />
-            <path d="M60 10 L 58 5" stroke="#8ba173" strokeWidth="0.8" strokeLinecap="round" />
-            <path d="M80 10 L 82 5" stroke="#8ba173" strokeWidth="0.8" strokeLinecap="round" />
-            <path d="M90 10 L 86 6" stroke="#8ba173" strokeWidth="0.8" strokeLinecap="round" />
-            <path d="M100 10 L 104 6" stroke="#8ba173" strokeWidth="0.8" strokeLinecap="round" />
-            {/* berries along the branch */}
-            <circle cx="20" cy="10" r="2" fill="#b23a3a" />
-            <circle cx="30" cy="12" r="1.8" fill="#a02f2f" />
-            <circle cx="36" cy="5" r="1.8" fill="#b23a3a" />
-            <circle cx="46" cy="11" r="1.6" fill="#a02f2f" />
-            <circle cx="54" cy="5" r="2" fill="#b23a3a" />
-            <circle cx="58" cy="4" r="1.5" fill="#a02f2f" />
-            <circle cx="70" cy="11" r="2.2" fill="#b23a3a" />
-            <circle cx="82" cy="4" r="1.8" fill="#b23a3a" />
-            <circle cx="86" cy="5" r="1.5" fill="#a02f2f" />
-            <circle cx="94" cy="12" r="1.6" fill="#a02f2f" />
-            <circle cx="104" cy="5" r="1.8" fill="#b23a3a" />
-            <circle cx="110" cy="12" r="1.8" fill="#a02f2f" />
-            <circle cx="120" cy="10" r="2" fill="#b23a3a" />
-          </svg>
         </div>
 
         <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-14 animate-fade-up">

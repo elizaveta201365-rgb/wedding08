@@ -224,11 +224,16 @@ function Index() {
             loading="lazy"
             allowFullScreen
           />
+          {/* Перекрытие встроенной кнопки виджета «Открыть в Яндекс.Картах» */}
+          <div
+            aria-hidden
+            className="pointer-events-auto absolute top-1 sm:top-1.5 left-1 sm:left-1.5 h-9 sm:h-10 w-[230px] sm:w-[260px] bg-white"
+          />
         </div>
 
         <div className="text-center mt-5 sm:mt-6 animate-fade-up px-4">
           <a
-            href="https://yandex.ru/maps/?text=Приморское шоссе 448 Дача на заливе"
+            href="https://yandex.ru/maps/org/dacha_na_zalive/1317172019/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block font-sans uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[10px] sm:text-xs text-[#6b7f5c] border-b border-[#8ba173] pb-1 hover:text-[#2d3d2a] transition-colors"

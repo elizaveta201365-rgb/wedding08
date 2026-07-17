@@ -17,13 +17,13 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const [name, setName] = useState("");
-  const [drink, setDrink] = useState("");
+  const [drinks, setDrinks] = useState<string[]>([]);
   const [song, setSong] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
 
-  const drinks = [
+  const drinkOptions = [
     "Шампанское",
     "Вино белое",
     "Вино красное",
@@ -33,10 +33,16 @@ function Index() {
     "Без алкоголя",
   ];
 
+  const toggleDrink = (d: string) => {
+    setDrinks((prev) =>
+      prev.includes(d) ? prev.filter((x) => x !== d) : [...prev, d],
+    );
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!drink) {
-      setError("Пожалуйста, выберите напиток.");
+    if (drinks.length === 0) {
+      setError("Пожалуйста, выберите хотя бы один напиток.");
       return;
     }
     setSending(true);
@@ -44,7 +50,7 @@ function Index() {
     try {
       const formData = new FormData();
       formData.append("name", name);
-      formData.append("drink", drink);
+      formData.append("drink", drinks.join(", "));
       formData.append("song", song);
       await fetch(
         "https://script.google.com/macros/s/AKfycbxy-LzbOD1_IAq1o-kRfV5UvEbXOPeBDUslc_7Iylb1R8JL32By93YpxoAVkFrAOEym/exec",

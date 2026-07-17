@@ -158,9 +158,40 @@ function Index() {
         <div className="text-center mb-10 sm:mb-14 animate-fade-up">
           <div className="flex items-center justify-center gap-3 mb-5 text-[#6b7f5c]">
             <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
+            <svg
+              aria-hidden
+              viewBox="0 0 40 20"
+              className="w-8 sm:w-10 h-4 sm:h-5 shrink-0"
+              fill="none"
+            >
+              {/* stem */}
+              <path d="M4 10 Q 20 10 36 10" stroke="#8ba173" strokeWidth="1" strokeLinecap="round" />
+              {/* leaves */}
+              <path d="M14 10 Q 17 4 22 6 Q 19 11 14 10 Z" fill="#8ba173" />
+              <path d="M26 10 Q 23 16 18 14 Q 21 9 26 10 Z" fill="#6b7f5c" />
+              {/* berries */}
+              <circle cx="10" cy="10" r="1.6" fill="#b23a3a" />
+              <circle cx="7" cy="12" r="1.4" fill="#b23a3a" />
+              <circle cx="33" cy="10" r="1.6" fill="#b23a3a" />
+              <circle cx="30" cy="8" r="1.4" fill="#b23a3a" />
+            </svg>
             <span className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
               Где встречаемся
             </span>
+            <svg
+              aria-hidden
+              viewBox="0 0 40 20"
+              className="w-8 sm:w-10 h-4 sm:h-5 shrink-0 -scale-x-100"
+              fill="none"
+            >
+              <path d="M4 10 Q 20 10 36 10" stroke="#8ba173" strokeWidth="1" strokeLinecap="round" />
+              <path d="M14 10 Q 17 4 22 6 Q 19 11 14 10 Z" fill="#8ba173" />
+              <path d="M26 10 Q 23 16 18 14 Q 21 9 26 10 Z" fill="#6b7f5c" />
+              <circle cx="10" cy="10" r="1.6" fill="#b23a3a" />
+              <circle cx="7" cy="12" r="1.4" fill="#b23a3a" />
+              <circle cx="33" cy="10" r="1.6" fill="#b23a3a" />
+              <circle cx="30" cy="8" r="1.4" fill="#b23a3a" />
+            </svg>
             <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
           </div>
         </div>

@@ -246,12 +246,12 @@ function Index() {
       {/* Расписание */}
       <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 pb-8 sm:pb-10 md:pb-12">
         <div className="text-center mb-10 sm:mb-14 animate-fade-up">
-          <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-5 text-[#6b7f5c]">
-            <span className="block h-px w-6 sm:w-14 bg-[#8ba173]" />
-            <span className="font-serif italic text-2xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
+          <div className="flex items-center justify-center gap-3 mb-5 text-[#6b7f5c]">
+            <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
+            <span className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
               Программа дня
             </span>
-            <span className="block h-px w-6 sm:w-14 bg-[#8ba173]" />
+            <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
           </div>
         </div>
 

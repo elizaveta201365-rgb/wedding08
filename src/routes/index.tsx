@@ -173,9 +173,6 @@ function Index() {
           <p className="font-serif italic text-lg sm:text-xl text-[#2d3d2a]">
             Ресторан «Дача на заливе»
           </p>
-          <p className="font-sans text-[13px] sm:text-sm text-[#6b7f5c] mt-1">
-            Приморское шоссе, 448
-          </p>
         </div>
 
         <div className="relative mx-auto w-full max-w-[340px] sm:max-w-lg md:max-w-3xl h-[420px] sm:h-[520px] md:h-[600px] animate-fade-up">

@@ -309,7 +309,7 @@ function Index() {
           <div className="flex items-center justify-center gap-3 mb-5 text-[#6b7f5c]">
             <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
             <span className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
-              В каком стиле встречаемся
+              Ваш образ
             </span>
             <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
           </div>

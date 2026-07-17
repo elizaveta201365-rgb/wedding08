@@ -227,7 +227,7 @@ function Index() {
           {/* Перекрытие встроенной кнопки виджета «Открыть в Яндекс.Картах» */}
           <div
             aria-hidden
-            className="pointer-events-auto absolute top-1 sm:top-1.5 left-1 sm:left-1.5 h-9 sm:h-10 w-[230px] sm:w-[260px] bg-white"
+            className="pointer-events-auto absolute bottom-1 sm:bottom-1.5 left-1 sm:left-1.5 h-10 sm:h-11 w-[220px] sm:w-[240px] bg-white"
           />
         </div>
 

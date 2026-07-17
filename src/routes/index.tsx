@@ -1,15 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import palette from "@/assets/palette.jpg.asset.json";
-import corgi from "@/assets/corgi-final.png.asset.json";
-import cat from "@/assets/cat.png.asset.json";
-import photoBooth from "@/assets/photo-booth.png.asset.json";
-import eucalyptus from "@/assets/eucalyptus.png.asset.json";
-import venue1 from "@/assets/venue-1.jpg.asset.json";
-import venue2 from "@/assets/venue-2.jpg.asset.json";
-import venue3 from "@/assets/venue-3.png.asset.json";
-import venue4 from "@/assets/venue-4.png.asset.json";
-import venue5 from "@/assets/venue-5.jpg.asset.json";
+const palette = { url: "/images/palette.jpg" };
+const corgi = { url: "/images/corgi-final.png" };
+const cat = { url: "/images/cat.png" };
+const photoBooth = { url: "/images/photo-booth.png" };
+const eucalyptus = { url: "/images/eucalyptus.png" };
+const venue1 = { url: "/images/venue-1.jpg" };
+const venue2 = { url: "/images/venue-2.jpg" };
+const venue3 = { url: "/images/venue-3.png" };
+const venue4 = { url: "/images/venue-4.png" };
+const venue5 = { url: "/images/venue-5.jpg" };
 
 export const Route = createFileRoute("/")({
   component: Index,

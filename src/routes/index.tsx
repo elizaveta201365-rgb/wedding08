@@ -154,7 +154,7 @@ function Index() {
       </section>
 
       {/* Место проведения */}
-      <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 pt-4 sm:pt-5 md:pt-6 pb-8 sm:pb-10 md:pb-12">
+      <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 pt-2 sm:pt-2.5 md:pt-3 pb-8 sm:pb-10 md:pb-12">
         <div className="text-center mb-10 sm:mb-14 animate-fade-up">
           <div className="flex items-center justify-center gap-3 mb-5 text-[#6b7f5c]">
             <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />

@@ -214,6 +214,9 @@ function Index() {
           <p className="font-sans text-[12px] sm:text-sm text-[#6b7f5c] mt-2 sm:mt-3 px-2 leading-relaxed">
             Приморское шоссе, 448 — ресторан «Дача на заливе»
           </p>
+          <p className="font-sans text-[12px] sm:text-sm text-[#6b7f5c] mt-2 px-2 leading-relaxed italic">
+            Для всех желающих мы готовы организовать трансфер.
+          </p>
         </div>
 
         <div className="relative mx-auto w-full max-w-4xl overflow-hidden rounded-sm border border-[#c8d3b7] bg-white p-1 sm:p-1.5 shadow-lg animate-fade-up">

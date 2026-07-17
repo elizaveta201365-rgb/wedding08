@@ -165,26 +165,33 @@ function Index() {
           </div>
           <svg
             aria-hidden
-            viewBox="0 0 120 16"
-            className="mx-auto w-32 sm:w-40 h-4 sm:h-5"
+            viewBox="0 0 140 18"
+            className="mx-auto w-36 sm:w-44 h-4 sm:h-5"
             fill="none"
           >
             {/* central stem */}
-            <path d="M20 8 Q 60 8 100 8" stroke="#8ba173" strokeWidth="1" strokeLinecap="round" />
-            {/* leaves — left */}
-            <path d="M40 8 Q 44 2 50 4 Q 46 9 40 8 Z" fill="#8ba173" />
-            <path d="M52 8 Q 48 14 42 12 Q 46 7 52 8 Z" fill="#6b7f5c" />
-            {/* leaves — right */}
-            <path d="M80 8 Q 76 2 70 4 Q 74 9 80 8 Z" fill="#8ba173" />
-            <path d="M68 8 Q 72 14 78 12 Q 74 7 68 8 Z" fill="#6b7f5c" />
-            {/* berries — left cluster */}
-            <circle cx="24" cy="8" r="1.8" fill="#b23a3a" />
-            <circle cx="21" cy="10" r="1.5" fill="#b23a3a" />
-            <circle cx="27" cy="10" r="1.4" fill="#b23a3a" />
-            {/* berries — right cluster */}
-            <circle cx="96" cy="8" r="1.8" fill="#b23a3a" />
-            <circle cx="99" cy="10" r="1.5" fill="#b23a3a" />
-            <circle cx="93" cy="10" r="1.4" fill="#b23a3a" />
+            <path d="M14 10 Q 70 10 126 10" stroke="#8ba173" strokeWidth="1" strokeLinecap="round" />
+            {/* tiny berry stems */}
+            <path d="M40 10 L 36 6" stroke="#8ba173" strokeWidth="0.8" strokeLinecap="round" />
+            <path d="M50 10 L 54 6" stroke="#8ba173" strokeWidth="0.8" strokeLinecap="round" />
+            <path d="M60 10 L 58 5" stroke="#8ba173" strokeWidth="0.8" strokeLinecap="round" />
+            <path d="M80 10 L 82 5" stroke="#8ba173" strokeWidth="0.8" strokeLinecap="round" />
+            <path d="M90 10 L 86 6" stroke="#8ba173" strokeWidth="0.8" strokeLinecap="round" />
+            <path d="M100 10 L 104 6" stroke="#8ba173" strokeWidth="0.8" strokeLinecap="round" />
+            {/* berries along the branch */}
+            <circle cx="20" cy="10" r="2" fill="#b23a3a" />
+            <circle cx="30" cy="12" r="1.8" fill="#a02f2f" />
+            <circle cx="36" cy="5" r="1.8" fill="#b23a3a" />
+            <circle cx="46" cy="11" r="1.6" fill="#a02f2f" />
+            <circle cx="54" cy="5" r="2" fill="#b23a3a" />
+            <circle cx="58" cy="4" r="1.5" fill="#a02f2f" />
+            <circle cx="70" cy="11" r="2.2" fill="#b23a3a" />
+            <circle cx="82" cy="4" r="1.8" fill="#b23a3a" />
+            <circle cx="86" cy="5" r="1.5" fill="#a02f2f" />
+            <circle cx="94" cy="12" r="1.6" fill="#a02f2f" />
+            <circle cx="104" cy="5" r="1.8" fill="#b23a3a" />
+            <circle cx="110" cy="12" r="1.8" fill="#a02f2f" />
+            <circle cx="120" cy="10" r="2" fill="#b23a3a" />
           </svg>
         </div>
 

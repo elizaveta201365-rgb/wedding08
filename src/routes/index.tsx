@@ -156,44 +156,36 @@ function Index() {
       {/* Место проведения */}
       <section className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10 pt-2 sm:pt-2.5 md:pt-3 pb-8 sm:pb-10 md:pb-12">
         <div className="text-center mb-10 sm:mb-14 animate-fade-up">
-          <div className="flex items-center justify-center gap-3 mb-5 text-[#6b7f5c]">
+          <div className="flex items-center justify-center gap-3 mb-3 text-[#6b7f5c]">
             <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
-            <svg
-              aria-hidden
-              viewBox="0 0 40 20"
-              className="w-8 sm:w-10 h-4 sm:h-5 shrink-0"
-              fill="none"
-            >
-              {/* stem */}
-              <path d="M4 10 Q 20 10 36 10" stroke="#8ba173" strokeWidth="1" strokeLinecap="round" />
-              {/* leaves */}
-              <path d="M14 10 Q 17 4 22 6 Q 19 11 14 10 Z" fill="#8ba173" />
-              <path d="M26 10 Q 23 16 18 14 Q 21 9 26 10 Z" fill="#6b7f5c" />
-              {/* berries */}
-              <circle cx="10" cy="10" r="1.6" fill="#b23a3a" />
-              <circle cx="7" cy="12" r="1.4" fill="#b23a3a" />
-              <circle cx="33" cy="10" r="1.6" fill="#b23a3a" />
-              <circle cx="30" cy="8" r="1.4" fill="#b23a3a" />
-            </svg>
-            <span className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight">
+            <span className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-[#2d3d2a] leading-tight whitespace-nowrap">
               Где встречаемся
             </span>
-            <svg
-              aria-hidden
-              viewBox="0 0 40 20"
-              className="w-8 sm:w-10 h-4 sm:h-5 shrink-0 -scale-x-100"
-              fill="none"
-            >
-              <path d="M4 10 Q 20 10 36 10" stroke="#8ba173" strokeWidth="1" strokeLinecap="round" />
-              <path d="M14 10 Q 17 4 22 6 Q 19 11 14 10 Z" fill="#8ba173" />
-              <path d="M26 10 Q 23 16 18 14 Q 21 9 26 10 Z" fill="#6b7f5c" />
-              <circle cx="10" cy="10" r="1.6" fill="#b23a3a" />
-              <circle cx="7" cy="12" r="1.4" fill="#b23a3a" />
-              <circle cx="33" cy="10" r="1.6" fill="#b23a3a" />
-              <circle cx="30" cy="8" r="1.4" fill="#b23a3a" />
-            </svg>
             <span className="block h-px w-10 sm:w-14 bg-[#8ba173]" />
           </div>
+          <svg
+            aria-hidden
+            viewBox="0 0 120 16"
+            className="mx-auto w-32 sm:w-40 h-4 sm:h-5"
+            fill="none"
+          >
+            {/* central stem */}
+            <path d="M20 8 Q 60 8 100 8" stroke="#8ba173" strokeWidth="1" strokeLinecap="round" />
+            {/* leaves — left */}
+            <path d="M40 8 Q 44 2 50 4 Q 46 9 40 8 Z" fill="#8ba173" />
+            <path d="M52 8 Q 48 14 42 12 Q 46 7 52 8 Z" fill="#6b7f5c" />
+            {/* leaves — right */}
+            <path d="M80 8 Q 76 2 70 4 Q 74 9 80 8 Z" fill="#8ba173" />
+            <path d="M68 8 Q 72 14 78 12 Q 74 7 68 8 Z" fill="#6b7f5c" />
+            {/* berries — left cluster */}
+            <circle cx="24" cy="8" r="1.8" fill="#b23a3a" />
+            <circle cx="21" cy="10" r="1.5" fill="#b23a3a" />
+            <circle cx="27" cy="10" r="1.4" fill="#b23a3a" />
+            {/* berries — right cluster */}
+            <circle cx="96" cy="8" r="1.8" fill="#b23a3a" />
+            <circle cx="99" cy="10" r="1.5" fill="#b23a3a" />
+            <circle cx="93" cy="10" r="1.4" fill="#b23a3a" />
+          </svg>
         </div>
 
         <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-14 animate-fade-up">

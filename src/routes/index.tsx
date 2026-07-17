@@ -308,7 +308,7 @@ function Index() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 items-center max-w-4xl mx-auto">
-          <div className="animate-fade-up order-2 md:order-1">
+          <div className="animate-fade-up order-1">
             <p className="font-sans text-[14px] sm:text-[15px] leading-[1.8] sm:leading-[1.9] text-[#3d4a37] mb-5">
               Наша свадьба будет лёгкой, летней и уютной — с природой, водой и
               атмосферой загородного вечера. Будем рады видеть вас в комфортных
@@ -320,8 +320,8 @@ function Index() {
               выбрать лёгкие платья и летние образы.
             </p>
           </div>
-          <div className="relative order-1 md:order-2 animate-fade-up">
-            <div className="overflow-hidden rounded-sm border border-[#c8d3b7] bg-white p-1.5 shadow-lg">
+          <div className="relative order-2 animate-fade-up flex justify-center">
+            <div className="overflow-hidden rounded-sm border border-[#c8d3b7] bg-white p-1.5 shadow-lg w-1/2">
               <img
                 src={palette.url}
                 alt="Природная палитра — оттенки нашей свадьбы"

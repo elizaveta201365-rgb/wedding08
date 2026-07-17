@@ -17,13 +17,13 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const [name, setName] = useState("");
-  const [drink, setDrink] = useState("");
+  const [drinks, setDrinks] = useState<string[]>([]);
   const [song, setSong] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
 
-  const drinks = [
+  const drinkOptions = [
     "Шампанское",
     "Вино белое",
     "Вино красное",
@@ -33,10 +33,16 @@ function Index() {
     "Без алкоголя",
   ];
 
+  const toggleDrink = (d: string) => {
+    setDrinks((prev) =>
+      prev.includes(d) ? prev.filter((x) => x !== d) : [...prev, d],
+    );
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!drink) {
-      setError("Пожалуйста, выберите напиток.");
+    if (drinks.length === 0) {
+      setError("Пожалуйста, выберите хотя бы один напиток.");
       return;
     }
     setSending(true);
@@ -44,7 +50,7 @@ function Index() {
     try {
       const formData = new FormData();
       formData.append("name", name);
-      formData.append("drink", drink);
+      formData.append("drink", drinks.join(", "));
       formData.append("song", song);
       await fetch(
         "https://script.google.com/macros/s/AKfycbxy-LzbOD1_IAq1o-kRfV5UvEbXOPeBDUslc_7Iylb1R8JL32By93YpxoAVkFrAOEym/exec",
@@ -376,33 +382,41 @@ function Index() {
                   Какой напиток вы предпочитаете?
                 </label>
                 <div className="grid grid-cols-2 gap-2 sm:gap-3">
-                  {drinks.map((d) => (
-                    <label
-                      key={d}
-                      className={`cursor-pointer flex items-center gap-2 border rounded-sm px-3 py-2.5 font-sans text-[13px] sm:text-sm transition-colors ${
-                        drink === d
-                          ? "border-[#6b7f5c] bg-[#e5ead8] text-[#2d3d2a]"
-                          : "border-[#c8d3b7] text-[#3d4a37] hover:border-[#8ba173]"
-                      }`}
-                    >
-                      <input
-                        type="radio"
-                        name="drink"
-                        value={d}
-                        checked={drink === d}
-                        onChange={(e) => setDrink(e.target.value)}
-                        className="sr-only"
-
-                      />
-                      <span
-                        aria-hidden
-                        className={`inline-block w-3 h-3 rounded-full border ${
-                          drink === d ? "bg-[#6b7f5c] border-[#6b7f5c]" : "border-[#8ba173]"
+                  {drinkOptions.map((d) => {
+                    const selected = drinks.includes(d);
+                    return (
+                      <label
+                        key={d}
+                        className={`cursor-pointer flex items-center gap-2 border rounded-sm px-3 py-2.5 font-sans text-[13px] sm:text-sm transition-colors ${
+                          selected
+                            ? "border-[#6b7f5c] bg-[#e5ead8] text-[#2d3d2a]"
+                            : "border-[#c8d3b7] text-[#3d4a37] hover:border-[#8ba173]"
                         }`}
-                      />
-                      {d}
-                    </label>
-                  ))}
+                      >
+                        <input
+                          type="checkbox"
+                          name="drink"
+                          value={d}
+                          checked={selected}
+                          onChange={() => toggleDrink(d)}
+                          className="sr-only"
+                        />
+                        <span
+                          aria-hidden
+                          className={`inline-flex items-center justify-center w-4 h-4 rounded-sm border shrink-0 ${
+                            selected ? "bg-[#6b7f5c] border-[#6b7f5c] text-white" : "border-[#8ba173]"
+                          }`}
+                        >
+                          {selected && (
+                            <svg viewBox="0 0 12 12" className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2">
+                              <path d="M2 6l3 3 5-6" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                          )}
+                        </span>
+                        {d}
+                      </label>
+                    );
+                  })}
                 </div>
               </div>
 

@@ -322,10 +322,13 @@ function Index() {
               атмосферой загородного вечера. Будем рады видеть вас в комфортных
               нарядах природных оттенков.
             </p>
-            <p className="font-sans text-[14px] sm:text-[15px] leading-[1.8] sm:leading-[1.9] text-[#3d4a37]">
+            <p className="font-sans text-[14px] sm:text-[15px] leading-[1.8] sm:leading-[1.9] text-[#3d4a37] mb-5">
               Формат — скорее расслабленный и элегантный, чем строгий: мужчинам
               не обязательно надевать костюмы и галстуки, а девушкам можно
               выбрать лёгкие платья и летние образы.
+            </p>
+            <p className="font-sans text-[14px] sm:text-[15px] leading-[1.8] sm:leading-[1.9] text-[#3d4a37] font-semibold">
+              Так как мы будем на берегу залива, просим вас взять с собой удобную обувь для выхода на пляж. Мы точно будем там фотографироваться 📸
             </p>
           </div>
           <div className="relative order-2 animate-fade-up flex justify-center">

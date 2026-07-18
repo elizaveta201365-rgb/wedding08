@@ -318,9 +318,7 @@ function Index() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 items-center max-w-4xl mx-auto">
           <div className="animate-fade-up order-1">
             <p className="font-sans text-[14px] sm:text-[15px] leading-[1.8] sm:leading-[1.9] text-[#3d4a37] mb-5">
-              Наша свадьба будет лёгкой, летней и уютной — с природой, водой и
-              атмосферой загородного вечера. Будем рады видеть вас в комфортных
-              нарядах природных оттенков.
+              Будем рады видеть вас в комфортных нарядах природных оттенков.
             </p>
             <p className="font-sans text-[14px] sm:text-[15px] leading-[1.8] sm:leading-[1.9] text-[#3d4a37] mb-5">
               Формат — скорее расслабленный и элегантный, чем строгий: мужчинам

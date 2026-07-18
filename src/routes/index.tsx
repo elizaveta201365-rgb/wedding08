@@ -327,7 +327,7 @@ function Index() {
               не обязательно надевать костюмы и галстуки, а девушкам можно
               выбрать лёгкие платья и летние образы.
             </p>
-            <p className="font-serif italic text-[15px] sm:text-[16px] leading-[1.8] sm:leading-[1.9] text-[#008000] font-semibold">
+            <p className="font-serif italic text-[15px] sm:text-[16px] leading-[1.8] sm:leading-[1.9] text-[#3B9F3B] font-semibold">
               Так как мы будем на берегу залива, просим вас взять с собой удобную обувь для выхода на пляж. Мы точно будем там фотографироваться 📸
             </p>
           </div>

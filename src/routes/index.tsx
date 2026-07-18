@@ -30,7 +30,6 @@ function Index() {
     "Ром",
     "Виски",
     "Без алкоголя",
-    "Без алкоголя",
   ];
 
   const toggleDrink = (d: string) => {

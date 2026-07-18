@@ -328,7 +328,7 @@ function Index() {
               выбрать лёгкие платья и летние образы.
             </p>
             <p className="font-serif italic text-[15px] sm:text-[16px] leading-[1.8] sm:leading-[1.9] text-[#7ACD7A] font-semibold">
-              Так как мы будем на берегу залива, просим вас взять с собой удобную обувь для выхода на пляж. Мы точно будем там фотографироваться 📸
+              Так как мы будем на берегу залива, просим вас взять с собой удобную обувь для выхода на пляж. Мы точно будем там фотографироваться 😉
             </p>
           </div>
           <div className="relative order-2 animate-fade-up flex justify-center">
